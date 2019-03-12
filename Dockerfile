@@ -13,3 +13,5 @@ RUN pip3 install --upgrade pip && \
     pip install six==1.10.0 && \
     pip install bzt
 
+COPY test.yml /tmp/test.yml
+RUN bzt /tmp/test.yml
